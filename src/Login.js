@@ -1,8 +1,10 @@
 // src/Login.js
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Login = ({ setAuthToken }) => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -15,6 +17,7 @@ const Login = ({ setAuthToken }) => {
     } catch (error) {
       console.error('Error logging in:', error.response.data.message);
     }
+    navigate('/');
   };
 
   return (

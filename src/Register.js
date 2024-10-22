@@ -1,8 +1,10 @@
 // src/Register.js
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
+  const navigate = useNavigate();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -16,6 +18,7 @@ const Register = () => {
     } catch (error) {
       console.error('Error registering:', error.response.data.message);
     }
+    navigate('/');
   };
 
   return (
