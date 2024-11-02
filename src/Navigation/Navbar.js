@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo on the left */}
         <div className="text-white text-2xl font-bold">
-          <Link to="/">YourLogo</Link> {/* Replace "YourLogo" with an actual logo or text */}
+          <Link to="/">BK</Link> {/* Replace "YourLogo" with an actual logo or text */}
         </div>
 
         {/* Menu items on the right */}

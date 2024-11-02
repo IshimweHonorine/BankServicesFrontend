@@ -1,6 +1,6 @@
 // ... other imports remain unchanged
 import React, { useState, useEffect } from 'react';
-import ChatComponent from './ChatComponent';
+// import ChatComponent from './ChatComponent';
 import Navbar from './Navigation/Navbar';
 import './App.css';
 
@@ -27,13 +27,13 @@ function Home() {
 
       {/* Hero Section */}
       <section className="hero-section py-10">
-        <h2 className="text-4xl font-bold text-center mb-4">Welcome to Your Bank</h2>
+        <h2 className="text-4xl font-bold text-center mb-4">Welcome to BK</h2>
         <p className="text-lg text-center mb-8">We are committed to providing accessible banking services for everyone, including our valued clients who are deaf.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-6xl">
           {/* Video Tutorial Card */}
           <div className="card bg-white p-6 rounded-lg shadow-lg hover:bg-gray-200">
-            <h5 className="text-xl font-semibold mb-4">Video Tutorial</h5>
+            <h5 className="text-xl font-semibold mb-4">Guidelines</h5>
             <p className="mb-4">Explore our banking services through this informative video, complete with captions and sign language interpretation.</p>
             <video controls className="w-full">
               <source src="/my_video.mp4" type="video/mp4" />
@@ -49,6 +49,7 @@ function Home() {
               <source src="/my_audio.mp3" type="audio/mp3" />
               Your browser does not support the audio element.
             </audio>
+            
           </div>
 
           {/* Welcome Text Card */}
